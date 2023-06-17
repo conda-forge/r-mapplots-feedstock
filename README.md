@@ -1,11 +1,11 @@
-About r-mapplots
-================
+About r-mapplots-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mapplots-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=mapplots
 
 Package license: GPL (>= 2)
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mapplots-feedstock/blob/main/LICENSE.txt)
 
 Summary: Create simple maps; add sub-plots like pie plots to a map or any other plot; format, plot and export gridded data. The package was developed for displaying fisheries data but most functions can be used for more generic data visualisation. 
 
