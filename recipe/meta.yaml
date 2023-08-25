@@ -1,4 +1,4 @@
-{% set version = '1.5.1' %}
+{% set version = "1.5.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mapplots_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mapplots/mapplots_{{ version }}.tar.gz
-  sha256: 37e96d34f37922180e07bb63b4514e07d42eee5bbf0885b278286ee48cf142a3
+  sha256: ed0e151d6865549d1a10882984a7fb29bc89a7b94ad69e512f90937b981c8a18
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1004
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,9 +36,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=mapplots
   license: GPL (>= 2)
-  summary: 'Create simple maps; add sub-plots like pie plots to a map or any other plot; format,
-    plot and export gridded data. The package was developed for displaying fisheries
-    data but most functions can be used for more generic data visualisation. '
+  summary: 'Create simple maps; add sub-plots like pie plots to a map or any other plot; format, plot and export gridded data. The package was developed for displaying fisheries data but most functions can be used for more generic data visualisation. '
   license_family: GPL3
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
