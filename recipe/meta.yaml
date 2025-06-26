@@ -1,4 +1,4 @@
-{% set version = "1.5.2" %}
+{% set version = "1.5.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mapplots_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mapplots/mapplots_{{ version }}.tar.gz
-  sha256: ed0e151d6865549d1a10882984a7fb29bc89a7b94ad69e512f90937b981c8a18
+  sha256: 3dae42ae4f6fbcb4483cd57c3ba93054d1bde78b4c75842d8330e8088ad99280
 
 build:
   noarch: generic
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
